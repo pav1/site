@@ -1,0 +1,46 @@
+
+<div align="center">
+<br />
+<h1>Login to Clarity for Charity</h1>
+<br />
+<?php if( isset( $error_message ) ) echo $error_message; ?>
+<table width="00%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td valign="top">
+        <form action="" method="post">
+        <fieldset>
+            <legend>Sign-in form</legend>
+                <table width="300" border="0" cellpadding="2" cellspacing="2">
+                    <tr>
+                        <td><div align="right"><strong>Email</strong></div></td>
+                        <td><input type="text" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td><div align="right"><strong>Password</strong></div></td>
+                        <td><input type="text" name="password" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td align="right"><input type="submit" value="Sign-in" /> </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </td>
+    <td valign="top" align="left"> 
+		<fieldset>
+			<legend>Don't have an account yet?</legend>
+			&nbsp;&nbsp;<a href="/users/register/">Register Here</a><br />
+		</fieldset> 
+		<fieldset>
+			<legend>Or, use an online service</legend>
+			&nbsp;&nbsp;<a href="/authentications/authenticatewith/google">Sign-in with Google</a><br /> 
+			&nbsp;&nbsp;<a href="/authentications/authenticatewith/yahoo">Sign-in with Yahoo</a><br /> 
+			&nbsp;&nbsp;<a href="/authentications/authenticatewith/facebook">Sign-in with Facebook</a><br />
+			&nbsp;&nbsp;<a href="/authentications/authenticatewith/twitter">Sign-in with Twitter</a><br />  
+			&nbsp;&nbsp;<a href="/authentications/authenticatewith/linkedin">Sign-in with LinkedIn</a><br />
+		</fieldset>
+	  </td>
+  </tr>
+</table> 
+</div>
