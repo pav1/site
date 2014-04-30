@@ -1,4 +1,4 @@
-<?php require_once ("Includes/session.php"); ?>
+<?php require_once ("session.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

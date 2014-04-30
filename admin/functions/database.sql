@@ -1,8 +1,8 @@
 
 CREATE TABLE IF NOT EXISTS `users` (
   id int(11) NOT NULL AUTO_INCREMENT,
-  email varchar(200) NOT NULL,
-  password varchar(200) NOT NULL,
+  email varchar(70) NOT NULL,
+  password varchar(50) NOT NULL,
   first_name varchar(200) NOT NULL,
   last_name varchar(200) NOT NULL,
   created_at datetime NOT NULL,

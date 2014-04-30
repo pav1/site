@@ -1,6 +1,6 @@
 <?php
-    require_once ("/Includes/simplecms-config.php");
-    require_once ("/Functions/database.php");
+    require_once ($_SERVER['DOCUMENT_ROOT']."/config/dbconfig.php");
+    require_once ($_SERVER['DOCUMENT_ROOT']."/admin/Functions/database.php");
 
     // Create database connection
     $databaseConnection = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);

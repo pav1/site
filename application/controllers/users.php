@@ -126,7 +126,7 @@ class users extends controller {
 			}
 		}
 
-		// get the user data from database 
+		// get the user data from database                                                                       
 		$user_data = $user->find_by_id( $_SESSION["user"] );
 
 		// load complete registration form view 
