@@ -30,7 +30,7 @@ class authentications extends controller {
 				$_SESSION["user"] = $authentication_info["user_id"]; 
 
 				// 2.2 - redirect to user/profile
-				$this->redirect( "users/profile" );
+				$this->redirect( "/users/profile" );
 			}
 
 		# 3 - else, here lets check if the user email we got from the provider already exists in our database ( for this example the email is UNIQUE for each user )

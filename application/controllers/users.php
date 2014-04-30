@@ -27,7 +27,7 @@ class users extends controller {
 			if( $user_data ){
 				$_SESSION["user"] = $user_data["id"]; 
 
-				$this->redirect( "users/profile" );
+				$this->redirect( "/users/profile" );
 			}
 
 			$data["error_message"] = '<b style="color:red">Bad Email or password! Try again.</b>';
@@ -82,7 +82,7 @@ class users extends controller {
 					// set user connected
 					$_SESSION["user"] = $new_user_id; 
  
-					$this->redirect( "users/profile" );
+					$this->redirect( "users/profile/" );
 				}
 			}
 		}
