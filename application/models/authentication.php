@@ -5,7 +5,7 @@ class authentication extends model {
 
 		$result = mysql_query_excute($sql);
 
-		return mysql_fetch_assoc($result);
+		return mysqli_fetch_assoc($result);
 	}
 
 	function create( $user_id, $provider, $provider_uid, $email, $display_name, $first_name, $last_name, $profile_url, $website_url ){ 
@@ -13,7 +13,7 @@ class authentication extends model {
 
 		mysql_query_excute($sql);
 
-		return mysql_insert_id();
+		return mysqli_insert_id();
 	} 
 	
 	function find_by_user_id( $user_id ){ 

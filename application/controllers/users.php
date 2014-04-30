@@ -3,10 +3,10 @@ class users extends controller {
 	function index()
 	{
 		if( isset( $_SESSION["user"] ) ){
-			$this->redirect( "users/profile" );
+			$this->redirect( "/users/profile" );
 		}
 		else{
-			$this->redirect( "users/login" );
+			$this->redirect( "/users/login" );
 		}
 	}
 
@@ -47,7 +47,7 @@ class users extends controller {
 		session_destroy();
 
 		// go back home 
-		$this->redirect( "users/login" );
+		$this->redirect( "/users/login" );
 	}
 
 	function register()
@@ -82,7 +82,7 @@ class users extends controller {
 					// set user connected
 					$_SESSION["user"] = $new_user_id; 
  
-					$this->redirect( "users/profile/" );
+					$this->redirect( "/users/profile/" );
 				}
 			}
 		}
@@ -121,7 +121,7 @@ class users extends controller {
 					$user->update( $_SESSION["user"], $email, $password, $first_name, $last_name );
 
 					// here we go
-					$this->redirect( "users/profile" );
+					$this->redirect( "/users/profile" );
 				}
 			}
 		}
@@ -141,7 +141,7 @@ class users extends controller {
 	{
 		// user connected?
 		if( ! isset( $_SESSION["user"] ) ){
-			$this->redirect( "users/login" );
+			$this->redirect( "/users/login" );
 		}
 
 		// load user and authentication models
@@ -154,7 +154,7 @@ class users extends controller {
 		// provider like twitter, linkedin, do not provide the user email
 		// in this case, we should ask them to complete their profile before continuing
 		if( ! $user_data["email"] ){
-			$this->redirect( "users/complete_registration" );
+			$this->redirect( "/users/complete_registration" );
 		}
 
 		// get the user authentication info from db, if any
