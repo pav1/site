@@ -13,7 +13,7 @@
 
 return 
 	array(
-		"base_url" => "http://localhost:56649/hybridauth/", 
+		"base_url" => "http://localhost:3844/hybridauth/", 
 
 		"providers" => array ( 
 			// openid providers
@@ -37,7 +37,7 @@ return
 
 			"Facebook" => array ( 
 				"enabled" => true,
-				"keys"    => array ( "id" => "", "secret" => "" )
+				"keys"    => array ( "id" => "1490562364503589", "secret" => "a8b02adc2b0267658b1f8a5d59f0693f" )
 			),
 
 			"Twitter" => array ( 

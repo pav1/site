@@ -65,7 +65,7 @@ class authentications extends controller {
 			$_SESSION["user"] = $new_user_id;
 
 			// 4.4 - redirect to user/profile
-			$this->redirect( "users/profile" );
+			$this->redirect( "/users/profile" );
 		}
 		catch( Exception $e ){
 			// Display the recived error

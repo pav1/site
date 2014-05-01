@@ -13,6 +13,11 @@ if( isset( $_GET['route'] ) ){
 	$uri['controller'] = @ $array_tmp_uri[0];
 	$uri['method']     = @ $array_tmp_uri[1];
 	$uri['var']        = @ $array_tmp_uri[2];
+
+    //echo "controller ". $array_tmp_uri[0] .'<br>';
+    //echo 'method '. $array_tmp_uri[1].'<br>';
+    //echo 'var '. @ $array_tmp_uri[2];
+    //die();
 }
 else{
 	$uri['controller'] = "home";

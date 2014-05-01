@@ -21,6 +21,6 @@ class authentication extends model {
 
 		$result = mysql_query_excute($sql);
  
-		return mysql_fetch_assoc($result);
+		return mysqli_fetch_assoc($result);
 	} 
 }
